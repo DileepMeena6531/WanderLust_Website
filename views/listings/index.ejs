@@ -1,13 +1,12 @@
 <% layout("/layouts/boilerplate") %>
-<body>
-    <h3>All Listings</h3>
+    <h3 class="row mt-3">All Listings</h3>
     <!-- <form method="get" action="/listings/new">
         <button>Add new list</button>
     </form> -->
     <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
         <% for(listing of allListing) {%>
             <a href="/listings/<%=listing.id %>" class="listing-link">
-            <div class="card">
+            <div class="card listing-card">
                 <img src="<%=listing.image %>" class="card-img-top" alt="listing_image" style="height: 20rem;">
                 <div class="card-img-overlay"></div>
                 <div class="card-body">
@@ -26,5 +25,3 @@
             <li><a href="/listings/<%=listing.id %>"><%=listing.title %></a></li>
         <% }%>
     </ul> -->
-    
-</body>

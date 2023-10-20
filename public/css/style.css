@@ -10,14 +10,21 @@ body{
 }
 .navbar{
     height: 4rem;
-    background-color: white;
+    background-color: #ffffff;
+    box-shadow: 0.5px 0.5px 10px black;
+}
+.navbar:hover{
+    box-shadow: 2px 2px 10px black;
 }
 .fa-compass{
     color: #fe424d;
     font-size: 2rem;
 }
 .nav-link{
-    color: #222222 !important;
+    color: black !important;
+}
+.nav-link:hover{
+    background-color: #ebebeb;
 }
 
 /* footer */
@@ -46,12 +53,15 @@ body{
     align-items: center;
 }
 /* Cards */
-.card{
+.listing-card{
     border: none !important;
     margin-bottom: 2rem;
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
 }
 .card-img-top{
-    border-radius: 1rem !important;
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
     width: 100% !important;
     object-fit:cover !important;
 }
@@ -90,3 +100,4 @@ body{
     padding-left: 0;
     padding-right: 0;
 }
+
